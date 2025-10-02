@@ -1,12 +1,10 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 
-export type SortKey = "price-asc" | "price-desc" | "name-asc" | "name-desc";
+export type SortKey = "price-asc" | "price-desc" | "title-asc" | "title-desc";
 
 export function useProductsQueryParams() {
   const [searchParams, setSearchParams] = useSearchParams();
-
-  console.log(searchParams.get("sort"), "uu");
 
   const params = useMemo(() => {
     const q = searchParams.get("q") ?? "";

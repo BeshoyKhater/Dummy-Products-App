@@ -14,6 +14,7 @@ import CategoryFilter from "./filters/CategoryFilter";
 import PriceFilter from "./filters/PriceFilter";
 import SortSelect from "./filters/SortSelect";
 import ClearFilters from "./filters/ClearFilter";
+import type { SortKey } from "../hooks/useProductsQueryParams";
 
 interface FilterSidebarProps {
   open: boolean;
@@ -23,12 +24,12 @@ interface FilterSidebarProps {
   category: string;
   min?: number;
   max?: number;
-  sort: string;
+  sort: SortKey;
   // Filter handlers
   onSearchChange: (value: string) => void;
   onCategoryChange: (value: string) => void;
   onPriceChange: (values: { min?: number; max?: number }) => void;
-  onSortChange: (value: string) => void;
+  onSortChange: (value: SortKey) => void;
   onClearAll: () => void;
 }
 

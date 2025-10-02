@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Paper } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import { ErrorOutline } from "@mui/icons-material";
 
 interface ErrorStateProps {
