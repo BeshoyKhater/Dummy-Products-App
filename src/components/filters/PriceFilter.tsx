@@ -5,7 +5,7 @@ export default function PriceFilter({
   max,
   onChange,
   minLimit = 0,
-  maxLimit = 4000,
+  maxLimit = 40000,
 }: {
   min?: number;
   max?: number;

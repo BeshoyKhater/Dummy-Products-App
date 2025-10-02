@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Category, Product, ProductsResponse } from "../types/product";
 
 const API = axios.create({
-  baseURL: "https://dummyjson.com",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://dummyjson.com",
   timeout: 15000,
 });
 
